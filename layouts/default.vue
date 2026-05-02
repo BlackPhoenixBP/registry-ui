@@ -7,7 +7,6 @@ const { isDark } = useTheme();
 useHead(() => ({
   htmlAttrs: {
     class: isDark.value ? 'dark' : undefined,
-    'data-theme': isDark.value ? 'dark' : 'light',
   },
 }));
 
