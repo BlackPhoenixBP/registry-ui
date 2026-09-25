@@ -6,13 +6,13 @@ const { isDark, toggleTheme } = useTheme();
 
 <template>
   <div class="ml-auto flex items-center gap-3">
-    <span class="text-sm text-gray-600">Theme</span>
+    <span class="text-sm text-gray-600 dark:text-gray-300">Theme</span>
     <button
       type="button"
       :aria-pressed="isDark"
       :aria-label="isDark ? 'Switch to light theme' : 'Switch to dark theme'"
-      class="relative inline-flex h-7 w-12 items-center rounded-full border border-gray-300 bg-gray-200 px-1 focus:outline-none focus:ring-2 focus:ring-sky-500 cursor-pointer"
-      :class="isDark ? 'bg-sky-500 border-sky-400' : 'bg-gray-200 border-gray-300'"
+      class="relative inline-flex h-7 w-12 items-center rounded-full border px-1 focus:outline-none focus:ring-2 focus:ring-sky-500 cursor-pointer"
+      :class="isDark ? 'bg-sky-500 border-sky-400 dark:bg-sky-500 dark:border-sky-400' : 'bg-gray-200 border-gray-300 dark:bg-gray-700 dark:border-gray-600'"
       @click="toggleTheme"
     >
       <span
