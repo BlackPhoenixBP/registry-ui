@@ -12,7 +12,7 @@ A Nuxt 4 (Vue 3 + TypeScript) full-stack web UI for browsing Docker container re
 # Init database then start dev server (prerequisites: a registry on localhost:4000)
 DB_PATH="./.data/db/registry.db" node ./scripts/migrate-db.mjs
 DB_PATH="./.data/db/registry.db" REGISTRY_URL="http://localhost:4000" node ./scripts/refresh-registry.mjs
-DB_PATH="./.data/db/registry.db" REGISTRY_TITLE="My Registry" REGISTRY_PUBLIC_URL="localhost:4000" npm run dev
+NUXT_DB_PATH="./.data/db/registry.db" NUXT_PUBLIC_REGISTRY_TITLE="My Registry" NUXT_PUBLIC_REGISTRY_PUBLIC_URL="localhost:4000" npm run dev
 
 # Seed database with random data (no registry required)
 DB_PATH="./.data/db/registry.db" node ./scripts/seed-db.mjs

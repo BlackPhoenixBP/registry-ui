@@ -224,7 +224,7 @@ DB_PATH="./.data/db/registry.db" \
 ```bash
 NUXT_DB_PATH="./.data/db/registry.db" \
   NUXT_REGISTRY_URL="http://localhost:4000" \
-  NUXT_REGISTRY_PUBLIC_URL="localhost:4000" \
+  NUXT_PUBLIC_REGISTRY_PUBLIC_URL="localhost:4000" \
   NUXT_PUBLIC_REGISTRY_TITLE="Dev Registry" \
   npm run dev
 ```
